@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: black;
+  color: #333;
+}
+
+header {
+  background-size: 100px 100px;
+  background-position: 0 0, 50px 50px;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  color: white;
+  height: 100%;
+  background-image: conic-gradient(
+    from 330deg at 50% 60%,
+    #11ffbb 60deg, transparent 60deg),
+  conic-gradient(
+    from 150deg at 50% 30%,
+    #5255bb 60deg, transparent 60deg);
+    background-size: 3rem 3rem;
+    background-position: 0 0, 1.5rem -.5rem;
+}
+#headerdiv {
+  width: 35%;
+  border-radius: 20px;
+  border: white 2px solid;
+  margin: 0 auto;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background: #F3CA40;
+  border-radius: 10px;
+}
+
+section:hover {
+ transform: scale(1.03);
+ transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px white;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #ddd;
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px;
+  transition: all 1000ms;
+  border-radius: 5px;
+}
+
+li:hover {
+    transform: scale(1.02);
+    outline: 2px solid red;
+    background-color:red;
+    text-decoration: solid;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 10px;
+    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.3s, transform ease-in-out 0.1s;
+    box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+    background-color: black;
+    
+  }
+ul:hover li:not(:hover) {
+  filter: blur(2px);
+  transition: filter 0.3s;
+}
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.page
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#left,#right {
+  font-weight: bolder;
+  font-size: larger;
+  padding: 0px 40px 0px 40px;
+ width: fit-content;}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-top: 4px solid #007BFF;
+}
+.social {
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons {
+  width: fit-content;
+  gap: 15px;
+  size: 30px;
+  margin: 10px 10px 10px 10px;
+}
+#about {
+  color: #000000;
+  background-color: #577590;
+}
+#projects {
+  background-color: #F08A4B;
+  color: white;
+}
+#resume {
+  background-color: #D5DFE5;
+  color: black;
+}

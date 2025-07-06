@@ -1,0 +1,87 @@
+body {
+  background: #000000;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+a {
+padding: 20px 30px;
+text-decoration: none;
+color: white;
+font-size: larger;
+font-weight: bolder;
+}
+a:hover {
+  color: #ff3838;
+  text-decoration: underline;}
+header {
+  width: 100%;
+  display: block;
+  background: grey;
+  padding: 10px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  width: 500px;
+  height: 650px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto 40px auto; /* Center horizontally, add bottom margin */
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  font-size: 32px;
+  padding: 10px;
+  text-align: right;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  flex-grow: 1;
+}
+
+button {
+  transition: box-shadow 0.6s ease-in-out, all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  padding: 25px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 18px rgba(255, 255, 255, 0.859);
+  background-color: #ff3838;
+}
+
+button:active {
+  scale: 0.95;
+  background-color: #c0c0c0;
+}
+
+.clear {
+  grid-column: span 4;
+  background-color: #ff5c5c;
+  color: white;
+  font-weight: bold;
+}
+
+.clear:hover {
+  background-color: #ff1f1f;
+}
